@@ -1,0 +1,14 @@
+
+ul {
+  list-style: unset;
+}
+
+#app {
+  margin: 0 auto;
+  padding: 2em 0;
+  max-width: 1240px;
+}
+
+.template-prefix + * {
+  display: none;
+}

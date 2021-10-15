@@ -6,15 +6,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Front end navigation</title>
   <link rel="icon" href="img/logo.png">
+  <link rel="stylesheet" href="https://yarn.pm/normalize.css">
+  <link rel="stylesheet" href="./css/index.css">
 </head>
 <body>
   <div id="app">
-    <ul v-for="cate in cates">
+    <div class="template-prefix" v-if="false">hide templates</div>
+
+    <ul v-for="item in resources">
       <li>
-        <div>{{cate.title}}</div>
-        <ul v-for="resource in cate.resources">
+        <div>{{item.title}}</div>
+        <ul v-for="tag in item.tags">
           <li>
-            <a :href="resource.url">{{resource.title}}</a>
+            <div>{{tag.title}}</div>
+            <ul v-for="link in tag.links">
+              <li :title="link.url">
+                <a :href="link.url">{{link.title}}</a>
+              </li>
+            </ul>
           </li>
         </ul>
       </li>
