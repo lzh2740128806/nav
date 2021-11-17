@@ -9,6 +9,10 @@ window.resources = [
                     "title": "Web前端导航",
                     "url": "http://www.alloyteam.com/nav/"
                 },
+                {
+                    "title": "知识点锦集",
+                    "url": "https://bitable.feishu.cn/app8Ok6k9qafpMkgyRbfgxeEnet?from=logout&table=tblEnSV2PNAajtWE&view=vewJHSwJVd"
+                },
             ],
         },
         {
